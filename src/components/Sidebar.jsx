@@ -8,10 +8,10 @@ const VIDEO_THUMB_URL = "/https://www.youtube.com/shorts/7j94LhdKTHk";
 // Array of 8 distinct icon image URLs
 const SIDEBAR_ICONS = [
   "/small_icon.png",
-  "/https://m.media-amazon.com/images/I/61ksbGeYLGL._AC_UF1000,1000_QL80_.jpg", // Replace with distinct URL #2
-  "/small_icon.png", // Replace with distinct URL #3
-  "/small_icon.png", // Replace with distinct URL #4
-  "/small_icon.png", // Replace with distinct URL #5
+  "https://m.media-amazon.com/images/I/61ksbGeYLGL._AC_UF1000,1000_QL80_.jpg", // Replace with distinct URL #2
+  "https://img.freepik.com/free-vector/inspirational-quote-watercolour-background_1048-18831.jpg", // Replace with distinct URL #3
+  "https://cdn.cdnparenting.com/articles/2021/06/27170256/Flag-Day-Quotes-1.webp", // Replace with distinct URL #4
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh16adAJZIwS_1bjF3k7px5oONJiuyFWJ6yQ&s", // Replace with distinct URL #5
   "/small_icon.png", // Replace with distinct URL #6
   "/small_icon.png", // Replace with distinct URL #7
   "/small_icon.png", // Replace with distinct URL #8
