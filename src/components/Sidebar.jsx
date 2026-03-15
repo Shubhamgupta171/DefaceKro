@@ -7,11 +7,11 @@ const VIDEO_THUMB_URL = "/https://www.youtube.com/shorts/7j94LhdKTHk";
 
 // Array of 8 distinct icon image URLs
 const SIDEBAR_ICONS = [
-  "/small_icon.png",
-  "https://m.media-amazon.com/images/I/61ksbGeYLGL._AC_UF1000,1000_QL80_.jpg", // Replace with distinct URL #2
-  "https://img.freepik.com/free-vector/inspirational-quote-watercolour-background_1048-18831.jpg", // Replace with distinct URL #3
-  "https://cdn.cdnparenting.com/articles/2021/06/27170256/Flag-Day-Quotes-1.webp", // Replace with distinct URL #4
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh16adAJZIwS_1bjF3k7px5oONJiuyFWJ6yQ&s", // Replace with distinct URL #5
+  "https://images.pexels.com/photos/1485548/pexels-photo-1485548.jpeg?cs=srgb&dl=pexels-fotios-photos-1485548.jpg&fm=jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPx-UymgX-8yuWAF_7KiABvXa1_gbusjLYA&s",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRASaHvTlP90SYJwd1kmyrQ6Qcf5NwjT9sdsA&s",
+  "https://www.bestfbstatus.com/wp-content/uploads/2024/10/catchy-captions-for-facebook-dp.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELS8XBdsHnzyCQaENZdL5AC5Xq3Ptv_GU-g&s",
   "/small_icon.png", // Replace with distinct URL #6
   "/small_icon.png", // Replace with distinct URL #7
   "/small_icon.png", // Replace with distinct URL #8
