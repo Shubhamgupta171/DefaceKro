@@ -8,7 +8,7 @@ const VIDEO_THUMB_URL = "/https://www.youtube.com/shorts/7j94LhdKTHk";
 // Array of 8 distinct icon image URLs
 const SIDEBAR_ICONS = [
   "/small_icon.png",
-  "/small_icon.png", // Replace with distinct URL #2
+  "/https://m.media-amazon.com/images/I/61ksbGeYLGL._AC_UF1000,1000_QL80_.jpg", // Replace with distinct URL #2
   "/small_icon.png", // Replace with distinct URL #3
   "/small_icon.png", // Replace with distinct URL #4
   "/small_icon.png", // Replace with distinct URL #5
