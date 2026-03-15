@@ -46,11 +46,10 @@ const Sidebar = () => {
 
       <div className="video-container" style={{ paddingBottom: '125%', height: 0, position: 'relative' }}>
         <iframe
-          src="https://www.youtube.com/embed/7j94LhdKTHk"
+          src="https://www.youtube.com/embed/7j94LhdKTHk?autoplay=1&mute=1&loop=1&playlist=7j94LhdKTHk"
           title="YouTube video player"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
         ></iframe>
