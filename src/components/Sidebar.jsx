@@ -7,9 +7,7 @@ const VIDEO_THUMB_URL = "/https://www.youtube.com/shorts/7j94LhdKTHk";
 
 // Array of 8 distinct icon image URLs
 const SIDEBAR_ICONS = [
-  "/small_icon.png", // Replace with distinct URL #6
-  "/small_icon.png", // Replace with distinct URL #7
-  "/small_icon.png", // Replace with distinct URL #8
+ 
 ];
 
 const Sidebar = () => {
