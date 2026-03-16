@@ -10,7 +10,7 @@ const MainContent = () => {
     <main className="main-content">
       <div className="banner">
         <h1 className="banner-title">
-          <img src="https://imgs.search.brave.com/gstCiwpweKOyeH2uz0Z62ehcJv1tn5JGHso9yR3YpdE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLmlt/Z3VyLmNvbS9tOUlF/ZU5GLnBuZw" alt="India Flag" />
+          <img src="" alt="India Flag" />
           Ministry of Defence
         </h1>
         <p className="banner-subtitle">
