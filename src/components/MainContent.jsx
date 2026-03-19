@@ -3,14 +3,14 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://www.shutterstock.com/image-vector/title-australian-flag-icon-standard-600nw-2654303689.jpg";
+const CYBER_HUB_URL = "https://quotefancy.com/media/wallpaper/3840x2160/5386638-Terry-Hayes-Quote-Computers-don-t-lie-but-liars-can-compute.jpg";
 
 const MainContent = () => {
   return (
     <main className="main-content">
       <div className="banner">
         <h1 className="banner-title">
-          <img src="https://media.istockphoto.com/id/463470045/vector/skull-and-crossbones-icon.jpg?s=612x612&w=0&k=20&c=_yKpMc5ZMuIW8l6QV1vlNZKE5xGFD6JoxTbDwrnVyxA=" alt="India Flag" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_wz7de1sJrm1toc7btNiQwb2JI5YRavhng&s" alt="India Flag" />
           Ministry of Defence
         </h1>
         <p className="banner-subtitle">
