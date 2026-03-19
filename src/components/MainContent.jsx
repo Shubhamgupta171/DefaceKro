@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://i.pinimg.com/564x/b1/d9/fb/b1d9fb118a151efc9e5400501c01bb63.jpg";
+const CYBER_HUB_URL = "https://images.news18.com/ibnkhabar/uploads/2023/05/green-tea-benefits.jpg";
 
 const MainContent = () => {
   return (
