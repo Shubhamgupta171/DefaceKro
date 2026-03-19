@@ -7,6 +7,15 @@ const VIDEO_THUMB_URL = "/https://www.youtube.com/shorts/7j94LhdKTHk";
 
 // Array of 8 distinct icon image URLs
 const SIDEBAR_ICONS = [
+"https://media.istockphoto.com/id/104499123/photo/page-from-old-arabic-book.jpg?s=612x612&w=0&k=20&c=-kTwytLSUw-sbtV0EuRNVTJ4HFtC6DMyF2C_j0_t_xg=",
+  "https://i.ytimg.com/vi/Kr4DCfXkL1o/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGDEgQih_MA8=&rs=AOn4CLA1-nrJ-tKGLlwMem1U3K_GgYKNag",
+  "https://blogs.transparent.com/arabic/wp-content/uploads/sites/12/2018/11/arabic-learning-350x213.jpg",
+  "https://www.optilingo.com/wp-content/uploads/2020/09/690232_OptiLingoHindiAlphabet_v2_Opt2_041520-1-1002x1536-1.png",
+  "https://preview.redd.it/22ohmw79k8ig1.jpeg?width=140&height=140&crop=1%3A1%2Csmart&auto=webp&s=fd8d74414754a10dd1768e9a4c9fac80c515cf1f",
+ "/small_icon.png", // Replace with distinct URL #6
+  "/small_icon.png", // Replace with distinct URL #7
+  "/small_icon.png", // Replace with distinct URL #8
+ 
  
 ];
 
