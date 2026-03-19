@@ -3,14 +3,14 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://as2.ftcdn.net/v2/jpg/07/03/50/37/1000_F_703503744_DmtvXMUo4fP4W62pQIatBimefCDV73JB.jpg";
+const CYBER_HUB_URL = "https://i.pinimg.com/736x/89/bd/32/89bd3256a84fc03f01dde63855bb7384.jpg";
 
 const MainContent = () => {
   return (
     <main className="main-content">
       <div className="banner">
         <h1 className="banner-title">
-          <img src="https://swarajya.gumlet.io/swarajya/2016-02/802429d5-d146-40dc-ac7b-e7d10856389d/Pakistan-Flag-Wallpapers-1920x1200-e1445775984515.jpg?w=610&q=75&compress=true&format=auto" alt="India Flag" />
+          <img src="https://c8.alamy.com/comp/M670B4/skull-icon-with-shield-on-white-background-the-hacker-hacked-the-system-M670B4.jpg" alt="India Flag" />
           Ministry of Defence
         </h1>
         <p className="banner-subtitle">
