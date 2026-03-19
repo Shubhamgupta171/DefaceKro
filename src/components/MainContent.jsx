@@ -10,7 +10,7 @@ const MainContent = () => {
     <main className="main-content">
       <div className="banner">
         <h1 className="banner-title">
-          <img src="https://c8.alamy.com/comp/M670B4/skull-icon-with-shield-on-white-background-the-hacker-hacked-the-system-M670B4.jpg" alt="India Flag" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIJiBuZxoxhRFjW0tNIZXgVpDtQkZvuU82VA&s" />
           Ministry of Defence
         </h1>
         <p className="banner-subtitle">
