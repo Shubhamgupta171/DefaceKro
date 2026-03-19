@@ -7,11 +7,11 @@ const VIDEO_THUMB_URL = "/https://www.youtube.com/shorts/7j94LhdKTHk";
 
 // Array of 8 distinct icon image URLs
 const SIDEBAR_ICONS = [
- "https://imgs.search.brave.com/qpvVM-nCRp6kExUK0-qioCmLwXg99KvouPp4ZxVt2Qc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2RiL2Uy/L2E5L2RiZTJhOWY1/ZTYzMDU1ZjkyMjQ3/NGNmYWM0ZDRiMGYx/LmpwZw",
-  "https://imgs.search.brave.com/U5-lpjPcBOY8itq5FJLvHcgqikM0np_sDmGqltmR7N4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDYv/NjQzLzAwOS9zbWFs/bC9ibGFjay1hbmQt/d2hpdGUtZWRpdGFi/bGUtdGV4dC1lZmZl/Y3QtZnJlZS12ZWN0/b3IuanBn",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRASaHvTlP90SYJwd1kmyrQ6Qcf5NwjT9sdsA&s",
-  "https://www.bestfbstatus.com/wp-content/uploads/2024/10/catchy-captions-for-facebook-dp.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELS8XBdsHnzyCQaENZdL5AC5Xq3Ptv_GU-g&s",
+ "https://t4.ftcdn.net/jpg/17/32/25/51/360_F_1732255115_V9H5mDKLIgARIdDfMQh2htqUAZiimX2M.jpg",
+  "https://imagesvs.oneindia.com/img/2014/09/14-hindi-600.jpg",
+  "https://media.istockphoto.com/id/1437997089/vector/indian-languages-word-cloud-vector-illustration.jpg?s=612x612&w=0&k=20&c=JWzmnXCUJj925PmLNc-1MIYhN19-sf8eAO7Onbl6paA=",
+  "https://www.optilingo.com/wp-content/uploads/2020/09/690232_OptiLingoHindiAlphabet_v2_Opt2_041520-1-1002x1536-1.png",
+  "https://www.shutterstock.com/image-vector/kala-kaushal-logo-indian-art-260nw-2229468481.jpg",
  "/small_icon.png", // Replace with distinct URL #6
   "/small_icon.png", // Replace with distinct URL #7
   "/small_icon.png", // Replace with distinct URL #8
