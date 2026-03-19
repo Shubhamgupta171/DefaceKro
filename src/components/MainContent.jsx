@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://imgs.search.brave.com/r9CnJTJqd7FYVB-Jlr4lBGEUZAp_r9sG_1eW8NPb_JI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zY3Jv/bGxkcm9sbC5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDUvTmFyZW5kcmEt/TW9kaS1NZW1lcy0z/LmpwZw";
+const CYBER_HUB_URL = "https://imgs.search.brave.com/tHpcxSlbRUSDss35c0shaorFVQGOUJIEWmgMVo9Ay9I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzY2LzJj/LzkyLzY2MmM5Mjc2/MWVhMGFjYzg3NGJh/NmU2OTYxYmJiMTE3/LmpwZw";
 
 const MainContent = () => {
   return (
