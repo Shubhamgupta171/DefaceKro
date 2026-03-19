@@ -3,14 +3,14 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24w4LCnPuq9jeaPXRxIaXq-DU2NpqPOkU9w&s";
+const CYBER_HUB_URL = "https://i.pinimg.com/564x/cf/b0/d1/cfb0d1f5e27b5324adaa430dc65a6058.jpg";
 
 const MainContent = () => {
   return (
     <main className="main-content">
       <div className="banner">
         <h1 className="banner-title">
-          <img src="https://imgs.search.brave.com/pJu28hHflkCnA55qX1WYvmunmBwBUBa35cyTVJ2wIdM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/MDYxNzE4OC9waG90/by9mbGFnLW9mLWNo/aW5hLXdpdGgtYS1n/cnVuZ2UtdGV4dHVy/ZS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9dGZicnRlNTVD/U1BfbFJNWm1xR2tU/QUx3UENIUlpHVkpE/NFJyUlQwUGVDST0" alt="India Flag" />
+          <img src="https://www.forumdaily.com/wp-content/uploads/2016/10/Depositphotos_65076917_m-2015.jpg" alt="India Flag" />
           Ministry of Defence
         </h1>
         <p className="banner-subtitle">
