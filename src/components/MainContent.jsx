@@ -10,7 +10,7 @@ const MainContent = () => {
     <main className="main-content">
       <div className="banner">
         <h1 className="banner-title">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Aadhaar_%28hindi%29.svg/960px-Aadhaar_%28hindi%29.svg.png" />
+          <img src="https://thumbs.dreamstime.com/b/united-states-department-army-london-uk-march-th-seal-symbol-portrayed-us-flag-da-one-three-military-depts-113157153.jpg" />
           Ministry of Defence
         </h1>
         <p className="banner-subtitle">
