@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/330px-Flag_of_Pakistan.svg.png";
+const CYBER_HUB_URL = "https://img.freepik.com/premium-vector/sahir-ali-name-word-urdu-logo-calligraphic-design-vector-typography-template_725403-3.jpg";
 
 const MainContent = () => {
   return (
@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="banner">
         <h1 className="banner-title">
           <img 
-            src="https://1000logos.net/wp-content/uploads/2023/11/BetterMe-Logo-2017.png" 
+            src="https://static.vecteezy.com/system/resources/thumbnails/054/849/956/small/indian-waving-flag-transparent-background-image-free-png.png" 
            
           />
           Empowering the Nation through Excellence and Integrity.
