@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://png.pngtree.com/png-clipart/20240416/original/pngtree-united-arab-emirates-flag-text-vector-transparent-png-image_14827743.png";
+const CYBER_HUB_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZTY94F4jqIuNIV-5EF0Za6zRDVA_1aPtQqsrAaSCveSoIUNXEY72ax9_VP7W3rJXerstnpR4wOLclvk0c-QISHH1VLOWeQqFPoVTzA&s=10";
 
 const MainContent = () => {
   return (
@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="banner">
         <h1 className="banner-title">
           <img 
-            src="https://img.freepik.com/free-vector/indian-flag-design-made-by-abstract-brush-strokes-with-hindi-text-jai-hind-victory-india-happy-independence-day_1302-5678.jpg?w=360" 
+            src="https://i.pinimg.com/736x/f6/65/bf/f665bfb42f3ebae982c354225282d5f6.jpg" 
            
           />
           Empowering the Nation through Excellence and Integrity.
