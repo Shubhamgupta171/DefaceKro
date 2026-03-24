@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://tiimg.tistatic.com/fp/1/008/041/indian-national-flag-20-30-inch-836.jpg";
+const CYBER_HUB_URL = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/960px-Flag_of_Iran.svg.png";
 
 const MainContent = () => {
   return (
@@ -11,8 +11,8 @@ const MainContent = () => {
       <div className="banner">
         <h1 className="banner-title">
           <img 
-            src="https://static.wixstatic.com/media/26cb54_79e9865b096146d09a6b7baf8e2da329~mv2.png/v1/fill/w_2500,h_2500,al_c/26cb54_79e9865b096146d09a6b7baf8e2da329~mv2.png" 
-            alt="Banner Logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS0fgs9GDuLEU_Dc0zcI8KN88xgTkIfVPP6A&s" 
+           
           />
           Empowering the Nation through Excellence and Integrity.
         </h1>
