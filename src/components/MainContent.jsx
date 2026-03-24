@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://img.freepik.com/premium-vector/sahir-ali-name-word-urdu-logo-calligraphic-design-vector-typography-template_725403-3.jpg";
+const CYBER_HUB_URL = "https://cdn.britannica.com/81/78281-004-5F554D17/flag-Iraq-2004.jpg";
 
 const MainContent = () => {
   return (
@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="banner">
         <h1 className="banner-title">
           <img 
-            src="https://static.vecteezy.com/system/resources/thumbnails/054/849/956/small/indian-waving-flag-transparent-background-image-free-png.png" 
+            src="https://toppng.com/uploads/preview/indian-army-logo-png-11553950722lrzr5ykzjw.png" 
            
           />
           Empowering the Nation through Excellence and Integrity.
