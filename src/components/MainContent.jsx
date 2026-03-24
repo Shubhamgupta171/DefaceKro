@@ -14,7 +14,7 @@ const MainContent = () => {
             src="https://toppng.com/uploads/preview/indian-army-logo-png-11553950722lrzr5ykzjw.png" 
            
           />
-          Empowering the Nation through Excellence and Integrity.
+          Empowering Nation through Excellence.
         </h1>
       </div>
 
