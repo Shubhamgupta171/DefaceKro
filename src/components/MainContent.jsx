@@ -9,7 +9,7 @@ const MainContent = () => {
     <main className="main-content">
       <div className="banner">
         <h1 className="banner-title">
-          <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHeyIe7AmdogQ/company-logo_200_200/company-logo_200_200/0/1736493834696/aaizel_international_technologies_pvt_ltd_logo?e=2147483647&v=beta&t=UfGPx4irkMFvK5a9rD5OAZpelJQODcxaCMZsEVBEIBk";
+          <img src="https://static.wixstatic.com/media/26cb54_79e9865b096146d09a6b7baf8e2da329~mv2.png/v1/fill/w_2500,h_2500,al_c/26cb54_79e9865b096146d09a6b7baf8e2da329~mv2.png"></img>
           Empowering the Nation through Excellence and Integrity.
         </p>
       </div>
