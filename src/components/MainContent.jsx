@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/330px-Flag_of_India.svg.png";
+const CYBER_HUB_URL = "https://i.pinimg.com/736x/97/bc/80/97bc805251784516a15e4f4950a9c9bb.jpg";
 
 const MainContent = () => {
   return (
@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="banner">
         <h1 className="banner-title">
           <img 
-            src="https://png.pngtree.com/png-clipart/20210808/original/pngtree-hindi-phrase-png-waqt-barbaad-karoge-to-tumhe-karega-local-lettering-png-image_6615907.jpg" 
+            src="https://sarkari-awas.delhi.gov.in/signin/static/images/logo_one_hindi.png" 
            
           />
           Empowering Nation through Excellence.
