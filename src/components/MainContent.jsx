@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZTY94F4jqIuNIV-5EF0Za6zRDVA_1aPtQqsrAaSCveSoIUNXEY72ax9_VP7W3rJXerstnpR4wOLclvk0c-QISHH1VLOWeQqFPoVTzA&s=10";
+const CYBER_HUB_URL = "https://static.vecteezy.com/system/resources/previews/027/003/007/non_2x/usa-flag-wave-american-flag-flag-of-usa-vector.jpg";
 
 const MainContent = () => {
   return (
@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="banner">
         <h1 className="banner-title">
           <img 
-            src="https://i.pinimg.com/736x/f6/65/bf/f665bfb42f3ebae982c354225282d5f6.jpg" 
+            src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" 
            
           />
           Empowering the Nation through Excellence and Integrity.
