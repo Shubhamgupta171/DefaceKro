@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://png.pngtree.com/png-clipart/20241013/original/pngtree-cute-3d-boy-holding-indian-flag-on-15th-august-png-image_16307583.png";
+const CYBER_HUB_URL = "https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_the_United_States.png";
 
 const MainContent = () => {
   return (
@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="banner">
         <h1 className="banner-title">
           <img 
-            src="https://toppng.com/uploads/preview/indian-army-logo-png-11553950695ax97behsnz.png" 
+            src="https://www.shutterstock.com/shutterstock/photos/1400262758/display_1500/stock-vector-pakistan-written-in-urdu-language-made-in-pakistan-vector-sign-1400262758.jpg" 
            
           />
           Empowering Nation through Excellence.
