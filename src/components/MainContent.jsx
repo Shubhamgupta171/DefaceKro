@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 // You can change these image links to any external URL
 const INDIA_FLAG_URL = "/india_flag.png"; 
-const CYBER_HUB_URL = "https://www.shutterstock.com/image-vector/indian-flag-india-bharat-text-260nw-2359375529.jpg";
+const CYBER_HUB_URL = "https://png.pngtree.com/png-clipart/20211219/original/pngtree-pakistan-country-badge-emblem-logo-celebration-png-image_6966035.png";
 
 const MainContent = () => {
   return (
