@@ -8,6 +8,7 @@ import React from 'react';
  * - Changing body text
  * - Modifying labels/buttons
  * - Rewriting large content blocks
+ * - Structural drift via extra nodes
  */
 
 const MainContent = () => {
@@ -29,19 +30,30 @@ const MainContent = () => {
         </h5>
 
         <h2 style={{ fontWeight: 'normal' }}>
-         Hacker 
+          Hacker
         </h2>
       </header>
 
       <main className="content-purge" style={{ padding: '30px' }}>
 
         {/* BODY TEXT CHANGES */}
-      
-// Add 10 dummy divs to change the node count(for static zone drift  Test: Structural Drift (Scoring Logic))
-{/* <div>
-   {[...Array(10)].map((_, i) => <div key={i}>Extra Node</div>)}
-</div> */}
+        <p>
+          This platform is currently undergoing infrastructure upgrades
+          and authentication system maintenance.
+        </p>
 
+        <p>
+          Certain administrative features may be temporarily unavailable
+          while synchronization processes complete.
+        </p>
+
+        {/* Add 10 dummy divs to change the node count */}
+        {/* Test: Structural Drift (Scoring Logic) */}
+        <div>
+          {[...Array(10)].map((_, i) => (
+            <div key={i}>Extra Node {i + 1}</div>
+          ))}
+        </div>
 
         {/* LARGE CONTENT REWRITE */}
         <section
@@ -130,7 +142,7 @@ const MainContent = () => {
         ))}
       </div>
 
-      <section
+      <footer
         className="footer-void"
         style={{
           textAlign: 'center',
@@ -141,7 +153,7 @@ const MainContent = () => {
         <b style={{ fontSize: '20px' }}>
           SYSTEM STATUS: MAINTENANCE MODE
         </b>
-      </section>
+      </footer>
     </div>
   );
 };
