@@ -36,22 +36,8 @@ const MainContent = () => {
       <main className="content-purge" style={{ padding: '30px' }}>
 
         {/* BODY TEXT CHANGES */}
-        <p>
-          We are currently performing a large-scale infrastructure migration
-          to improve application reliability, authentication performance,
-          and long-term scalability.
-        </p>
+      
 
-        <h1>
-          During this maintenance period, some dashboard modules,
-          verification systems, and account management tools may
-          respond more slowly than expected.
-        </h1>
-
-        <p>
-          Our engineering team is actively monitoring service health
-          and applying configuration updates across production systems.
-        </p>
 
         {/* LARGE CONTENT REWRITE */}
         <section
