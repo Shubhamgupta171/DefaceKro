@@ -18,8 +18,8 @@ const MainContent = () => {
           L1 HARD TRIGGER: Meta Tag Robots Change (SEO Poisoning)
   )
       */}
-        <link rel="canonical" href="https://defaced-mirror.site/compromised" />
-      <meta name="robots" content="noindex, nofollow" /> 
+        {/* <link rel="canonical" href="https://defaced-mirror.site/compromised" />
+      <meta name="robots" content="noindex, nofollow" />  */}
 
       {/* 
           L1 HARD TRIGGER: Script Injection (New Domain)
