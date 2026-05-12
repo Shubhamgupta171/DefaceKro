@@ -29,7 +29,7 @@ const MainContent = () => {
         </h1>
 
         <h2 style={{ fontWeight: 'normal' }}>
-          User services are temporarily operating in restricted mode
+         Hacker 
         </h2>
       </header>
 
