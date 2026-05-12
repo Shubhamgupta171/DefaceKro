@@ -42,11 +42,11 @@ const MainContent = () => {
           and long-term scalability.
         </p>
 
-        <p>
+        <h1>
           During this maintenance period, some dashboard modules,
           verification systems, and account management tools may
           respond more slowly than expected.
-        </p>
+        </h1>
 
         <p>
           Our engineering team is actively monitoring service health
