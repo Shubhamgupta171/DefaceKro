@@ -37,6 +37,10 @@ const MainContent = () => {
 
         {/* BODY TEXT CHANGES */}
       
+// Add 10 dummy divs to change the node count
+<div>
+   {[...Array(10)].map((_, i) => <div key={i}>Extra Node</div>)}
+</div>
 
 
         {/* LARGE CONTENT REWRITE */}
