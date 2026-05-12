@@ -24,9 +24,9 @@ const MainContent = () => {
         }}
       >
         {/* HEADLINE CHANGE */}
-        <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>
+        <h5 style={{ fontSize: '3rem', marginBottom: '10px' }}>
           PLATFORM MAINTENANCE ACTIVE
-        </h1>
+        </h5>
 
         <h2 style={{ fontWeight: 'normal' }}>
          Hacker 
