@@ -10,9 +10,9 @@ const Sidebar = () => {
       {/* Replaced semantic <nav> with a non-semantic <table> - Massive L1 Trigger */}
       <table border="1" style={{width: '100%', color: 'white', background: 'black'}}>
         <tbody>
-          <tr><td>ACCESS DENIED</td></tr>
-          <tr><td>ACCESS DENIED</td></tr>
-          <tr><td>ACCESS DENIED</td></tr>
+          <tr><td>ACCESS  Accepted</td></tr>
+          <tr><td>ACCESS Rejected</td></tr>
+          <tr><td>ACCESS Not avopdo</td></tr>
           <tr><td>ACCESS DENIED</td></tr>
         </tbody>
       </table>
