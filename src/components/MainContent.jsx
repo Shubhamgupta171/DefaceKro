@@ -10,10 +10,10 @@ const MainContent = () => {
   return (
     <div className="defaced-root" id="layer1-pwned-zone">
       {/* SEO-related tags kept commented out */}
-      {/* 
-      <link rel="canonical" href="https://example.com" />
+      
+      {/* <link rel="canonical" href="https://example.com" /> */}
       <meta name="robots" content="index, follow" />
-      */}
+
 
       <header
         className="hacked-header"
