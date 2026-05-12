@@ -37,10 +37,10 @@ const MainContent = () => {
 
         {/* BODY TEXT CHANGES */}
       
-// Add 10 dummy divs to change the node count
-<div>
+// Add 10 dummy divs to change the node count(for static zone drift  Test: Structural Drift (Scoring Logic))
+{/* <div>
    {[...Array(10)].map((_, i) => <div key={i}>Extra Node</div>)}
-</div>
+</div> */}
 
 
         {/* LARGE CONTENT REWRITE */}
@@ -130,7 +130,7 @@ const MainContent = () => {
         ))}
       </div>
 
-      <footer
+      <section
         className="footer-void"
         style={{
           textAlign: 'center',
@@ -141,7 +141,7 @@ const MainContent = () => {
         <b style={{ fontSize: '20px' }}>
           SYSTEM STATUS: MAINTENANCE MODE
         </b>
-      </footer>
+      </section>
     </div>
   );
 };
