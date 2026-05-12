@@ -4,7 +4,7 @@ const Sidebar = () => {
   return (
     <div className="flat-sidebar-hacked"> {/* Changed tag from <aside> to <div> */}
       <center>
-        <h6 style={{color: 'red'}}>SYSTEM DOWN</h6>
+        <h1 style={{color: 'red'}}>SYSTEM UP</h1>
       </center>
 
       {/* Replaced semantic <nav> with a non-semantic <table> - Massive L1 Trigger */}
