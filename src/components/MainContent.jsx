@@ -12,7 +12,7 @@ const MainContent = () => {
       {/* SEO-related tags kept commented out */}
       
       {/* <link rel="canonical" href="https://example.com" /> */}
-      <meta name="robots" content="index, follow" />
+      {/* <meta name="robots" content="index, follow" /> */}
 
 
       <header
