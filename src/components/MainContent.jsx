@@ -1,67 +1,67 @@
 import React from 'react';
 
 /**
- * MainContent - Layer 1 "Bridge" Test (Target: 0.35 - 0.45 Composite)
+ * MainContent - Layer 1 "Structural Annihilation" (Target: DEFACED Verdict > 0.7)
  * 
- * Strategy to cross the 30% barrier:
- * 1. Node Count: 350 nodes (Stepping up from 220 to hit the 'High Weight' transition).
- * 2. High-Penalty Tags: Introducing a <table> structure. Tables carry high 
- *    structural weight in L1 (TED) compared to simple <div> or <span>.
- * 3. Root Tag Shift: Using <article> to ensure the structural signature differs 
- *    from previous <main>, <section>, and <div> tests.
+ * Strategy for Absolute Defacement:
+ * 1. Node Count Bomb: 1,200 nodes (Forces L1 Raw Score to 1.0 / 100%).
+ * 2. High-Priority Foreign Elements: Injecting <iframe> and <details> tags. 
+ *    L1 detectors treat these as high-certainty malicious injections.
+ * 3. Total Hierarchy Destruction: Removing all original semantic tags (H1, H2, Footer) 
+ *    and replacing them with a deeply nested, non-semantic tree.
+ * 4. Root Re-parenting: Using <aside> as the root to maximize the 'Container Shift' penalty.
  */
 const MainContent = () => {
   return (
-    // L1: STRUCTURAL SHIFT - Using <article> for the first time in these tests
-    <article className="content-container-v4" id="l1-bridge-threshold">
+    // L1: TOTAL ROOT SHIFT - Using <aside> instead of <main>/<section>/<div>
+    <aside className="anomaly-root-void" id="layer1-annihilation-target">
       
-      <header className="page-header" style={{ padding: '25px', backgroundColor: '#fdfdfd' }}>
-        <h1 style={{ fontSize: '24px', color: '#111' }}>Operational Logging System</h1>
-      </header>
+      {/* 
+          L1: HIGH-CERTAINTY INJECTION (IFRAME) 
+          Iframes are often weighted at 5x a normal tag in structural comparison.
+      */}
+      <div className="iframe-wrapper" style={{ border: '5px solid red', padding: '10px' }}>
+        <iframe 
+          title="anomaly-payload" 
+          src="about:blank" 
+          style={{ width: '100%', height: '400px', backgroundColor: '#000' }} 
+        />
+      </div>
 
       {/* 
-          NODE COUNT DRIFT: 350 NODES
-          This is calibrated to push the L1 Raw Score above 92%.
-          In many Fusion Engines, crossing 90% Raw L1 triggers a "Weight Escalation."
+          NODE COUNT BOMB: 1,200 NODES 
+          This creates such a massive statistical skew that the "Node Count Drift" 
+          reaches 100% certainty, bypassing all "Clean" filters.
       */}
-      <div className="l1-node-load" aria-hidden="true" style={{ opacity: 0, height: 0 }}>
-        {Array.from({ length: 350 }).map((_, i) => (
-          <span key={i}>structural_drift_0x{i.toString(16)}</span>
+      <div className="structural-noise-bomb" aria-hidden="true" style={{ opacity: 0, height: 0 }}>
+        {Array.from({ length: 1200 }).map((_, i) => (
+          <details key={i} open>
+            <summary>Drift_Annihilation_Point_{i}</summary>
+            <div className="nested-anomaly">
+              <span>0x{i.toString(16)}</span>
+              <span />
+            </div>
+          </details>
         ))}
       </div>
 
-      <div className="log-viewer" style={{ padding: '30px' }}>
-        {/* 
-            L1: HIGH-PENALTY TAG INJECTION
-            If your baseline was flexbox/div based, introducing a <table> 
-            will significantly penalize the 'Tag Mapping' and 'Structural Hash' metrics.
-        */}
-        <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #eee' }}>
-          <thead>
-            <tr style={{ backgroundColor: '#f5f5f5', textAlign: 'left' }}>
-              <th style={{ padding: '10px' }}>Entry ID</th>
-              <th style={{ padding: '10px' }}>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{ padding: '10px', borderBottom: '1px solid #eee' }}>LOG_9501_A</td>
-              <td style={{ padding: '10px', borderBottom: '1px solid #eee' }}>INITIALIZING</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '10px' }}>LOG_9501_B</td>
-              <td style={{ padding: '10px' }}>L1_CALIBRATION</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <footer className="system-footer" style={{ marginTop: '40px', padding: '20px', textAlign: 'center' }}>
-        <div style={{ fontSize: '12px', color: '#bbb', textTransform: 'uppercase' }}>
-          Anomaly_ID: BRIDGE_TO_0.3 | Threshold_Calibration: Active
+      <section className="content-purge" style={{ padding: '50px', textAlign: 'center' }}>
+        <div style={{ fontSize: '3rem', fontWeight: 'bold', color: 'red' }}>
+          ZONE_REPLACEMENT_COMPLETE
         </div>
-      </footer>
-    </article>
+        <p style={{ fontSize: '1.2rem' }}>
+          Original structural intelligence baseline has been 100% overwritten.
+        </p>
+      </section>
+
+      {/* 
+          L1: ATTRIBUTE ANARCHY
+          Using completely randomized IDs to ensure zero similarity with the baseline attributes.
+      */}
+      <div id="attr-purge-999" className="class-annihilation-x">
+        <canvas id="drift-canvas-payload" width="100" height="100" />
+      </div>
+    </aside>
   );
 };
 
