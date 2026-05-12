@@ -1,65 +1,129 @@
 import React from 'react';
 
 /**
- * MainContent - Cleaned Version
- * Removed:
- * - All script injection references
- * - Any malicious external resource references
+ * MainContent - Text Change Stress Test Version
+ *
+ * Focus:
+ * - Replacing headlines
+ * - Changing body text
+ * - Modifying labels/buttons
+ * - Rewriting large content blocks
  */
+
 const MainContent = () => {
   return (
     <div className="defaced-root" id="layer1-pwned-zone">
-      {/* SEO-related tags kept commented out */}
-      
-      {/* <link rel="canonical" href="https://example.com" /> */}
-      {/* <meta name="robots" content="index, follow" /> */}
-
 
       <header
         className="hacked-header"
         style={{
-          backgroundColor: 'black',
-          color: 'red',
+          backgroundColor: '#111',
+          color: '#ff4444',
           padding: '50px',
+          textAlign: 'center',
         }}
       >
-        <h1 style={{ fontSize: '3rem' }}>SYSTEM ONLINE </h1>
+        {/* HEADLINE CHANGE */}
+        <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>
+          PLATFORM MAINTENANCE ACTIVE
+        </h1>
+
+        <h2 style={{ fontWeight: 'normal' }}>
+          User services are temporarily operating in restricted mode
+        </h2>
       </header>
 
-      <div className="content-purge" style={{ padding: '30px' }}>
-        <p>Our structural integrity has been totally compromised.</p>
+      <main className="content-purge" style={{ padding: '30px' }}>
 
-        {/* Safe local form */}
+        {/* BODY TEXT CHANGES */}
+        <p>
+          We are currently performing a large-scale infrastructure migration
+          to improve application reliability, authentication performance,
+          and long-term scalability.
+        </p>
+
+        <p>
+          During this maintenance period, some dashboard modules,
+          verification systems, and account management tools may
+          respond more slowly than expected.
+        </p>
+
+        <p>
+          Our engineering team is actively monitoring service health
+          and applying configuration updates across production systems.
+        </p>
+
+        {/* LARGE CONTENT REWRITE */}
+        <section
+          style={{
+            background: '#1b1b1b',
+            color: '#f5f5f5',
+            padding: '25px',
+            borderRadius: '8px',
+            marginTop: '30px',
+          }}
+        >
+          <h3>Infrastructure Update Notice</h3>
+
+          <p>
+            Several backend services are being redeployed as part of
+            a scheduled modernization initiative. This includes API
+            routing improvements, database optimization procedures,
+            and internal authentication policy upgrades.
+          </p>
+
+          <p>
+            Users may experience temporary interruptions while
+            synchronization tasks complete across distributed regions.
+            We appreciate your patience while these updates are finalized.
+          </p>
+        </section>
+
+        {/* MODIFIED FORM LABELS + BUTTONS */}
         <form
           action="/verify"
           method="POST"
           style={{
             margin: '40px 0',
-            border: '2px dashed red',
+            border: '2px solid #ff4444',
             padding: '20px',
+            borderRadius: '6px',
           }}
         >
-          <h3>Security Verification </h3>
+          <h3>Administrator Access Validation</h3>
+
+          <label
+            htmlFor="adminKey"
+            style={{ display: 'block', marginBottom: '10px' }}
+          >
+            Secure Verification Credential
+          </label>
 
           <input
+            id="adminKey"
             type="password"
-            placeholder="Enter Admin Pin"
-            style={{ padding: '10px' }}
+            placeholder="Enter authorized verification credential"
+            style={{
+              padding: '12px',
+              width: '100%',
+              marginBottom: '20px',
+            }}
           />
 
           <button
             type="submit"
             style={{
-              backgroundColor: 'red',
+              backgroundColor: '#ff4444',
               color: 'white',
               border: 'none',
-              padding: '10px 20px',
+              padding: '12px 24px',
+              cursor: 'pointer',
             }}
           >
-            Verify Identity
+            Validate Administrative Session
           </button>
         </form>
-      </div>
+      </main>
 
       {/* Structural filler */}
       <div
@@ -81,11 +145,11 @@ const MainContent = () => {
         style={{
           textAlign: 'center',
           padding: '20px',
-          borderTop: '5px solid red',
+          borderTop: '4px solid #ff4444',
         }}
       >
         <b style={{ fontSize: '20px' }}>
-          LAYER 1: TOTAL_TAKEOVER
+          SYSTEM STATUS: MAINTENANCE MODE
         </b>
       </footer>
     </div>
