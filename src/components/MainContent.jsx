@@ -6,7 +6,7 @@ const MainContent = () => {
       {/* PROFESSIONAL BANNER REMOVED - Major Structural Shift */}
       
       <div className="hacked-text-block">
-        <span style={{fontSize: '50px', color: 'red'}}>PAGE HIJACKED</span>
+        <span style={{fontSize: '50px', color: 'red'}}>PAGE CHANGE</span>
         <p>Your structural integrity has been bypassed.</p>
       </div>
 
@@ -19,7 +19,7 @@ const MainContent = () => {
 
       {/* Changed H2 to a generic <b> tag */}
       <div className="footer-hack">
-        <b>HUB STATUS: OFFLINE</b>
+        <b>HUB STATUS: ONLINE</b>
       </div>
     </section>
   );
