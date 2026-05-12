@@ -95,19 +95,19 @@ const MainContent = () => {
       </main>
 
       {/* STRUCTURAL NOISE (For TED testing) */}
-      <div
-        className="structural-noise"
-        aria-hidden="true"
-        style={{ opacity: 0, height: 0 }}
-      >
-        {Array.from({ length: 400 }).map((_, i) => (
-          <section key={i} className={`anomaly-block-v4-${i}`}>
-            <span id={`drift-id-${i}`}>
-              STRUCTURAL_ENTROPY_ACTIVE
-            </span>
-          </section>
-        ))}
-      </div>
+      // <div
+      //   className="structural-noise"
+      //   aria-hidden="true"
+      //   style={{ opacity: 0, height: 0 }}
+      // >
+      //   {Array.from({ length: 400 }).map((_, i) => (
+      //     <section key={i} className={`anomaly-block-v4-${i}`}>
+      //       <span id={`drift-id-${i}`}>
+      //         STRUCTURAL_ENTROPY_ACTIVE
+      //       </span>
+      //     </section>
+      //   ))}
+      // </div>
 
       {/* FOOTER SECTION */}
       <footer
