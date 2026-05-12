@@ -23,11 +23,11 @@ const MainContent = () => {
           padding: '50px',
         }}
       >
-        <h1 style={{ fontSize: '3rem' }}>SYSTEM OFFLINE</h1>
+        <h1 style={{ fontSize: '3rem' }}>SYSTEM ONLINE </h1>
       </header>
 
       <div className="content-purge" style={{ padding: '30px' }}>
-        <p>Your structural integrity has been totally compromised.</p>
+        <p>Our structural integrity has been totally compromised.</p>
 
         {/* Safe local form */}
         <form
@@ -39,7 +39,7 @@ const MainContent = () => {
             padding: '20px',
           }}
         >
-          <h3>Security Verification</h3>
+          <h3>Security Verification </h3>
 
           <input
             type="password"
