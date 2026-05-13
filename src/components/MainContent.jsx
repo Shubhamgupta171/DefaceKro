@@ -1,56 +1,78 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 /**
- * MainContent - SEO Poisoning Test Version
+ * MainContent - Canonical Tag Only Version
+ * Keeps the page UI unchanged and only injects
+ * a canonical tag into the document head.
  */
+
 const MainContent = () => {
-  
-  // Test: SEO Poisoning - Canonical Change
+
   useEffect(() => {
-    // 1. Create the canonical link element
+
+    // Remove existing canonical tag if present
+    const existingCanonical = document.querySelector(
+      'link[rel="canonical"]'
+    );
+
+    if (existingCanonical) {
+      existingCanonical.remove();
+    }
+
+    // Create new canonical tag
     const link = document.createElement("link");
+
     link.rel = "canonical";
-    link.href = "https://different-site.com"; // The "malicious" canonical URL
+    link.href = "https://different-site.com";
     link.id = "test-canonical-link";
-    
-    // 2. Append it to the <head>
+
+    // Append to head
     document.head.appendChild(link);
-    
-    // Cleanup: Remove it when the component unmounts
+
+    // Cleanup on component unmount
     return () => {
-      const existingLink = document.getElementById("test-canonical-link");
-      if (existingLink) document.head.removeChild(existingLink);
+      const insertedLink = document.getElementById(
+        "test-canonical-link"
+      );
+
+      if (insertedLink) {
+        insertedLink.remove();
+      }
     };
+
   }, []);
 
   return (
-    <div className="defaced-root" id="layer1-pwned-zone">
+    <div className="main-content">
       <header
-        className="hacked-header"
         style={{
-          backgroundColor: '#111',
-          color: '#ff4444',
-          padding: '50px',
-          textAlign: 'center',
+          padding: "30px",
+          backgroundColor: "#f5f5f5",
+          textAlign: "center",
         }}
       >
-        <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>
-          PLATFORM MAINTENANCE ACTIVE
-        </h1>
-        <h2 style={{ fontWeight: 'normal' }}>
-          User services are temporarily operating in restricted mode
-        </h2>
+        <h1>Welcome to the Platform</h1>
+        <p>All systems operating normally.</p>
       </header>
 
-      <main style={{ padding: '30px' }}>
-        <section style={{ background: '#1b1b1b', color: '#f5f5f5', padding: '25px', borderRadius: '8px' }}>
-          <h3>Infrastructure Update Notice</h3>
-          <p>This page is now injecting a malicious canonical link into the head.</p>
+      <main style={{ padding: "20px" }}>
+        <section>
+          <h2>Dashboard</h2>
+          <p>
+            This component only modifies the canonical tag
+            in the document head.
+          </p>
         </section>
       </main>
 
-      <footer style={{ textAlign: 'center', padding: '20px', borderTop: '4px solid #ff4444' }}>
-        <b>SYSTEM STATUS: MAINTENANCE MODE</b>
+      <footer
+        style={{
+          padding: "20px",
+          textAlign: "center",
+          borderTop: "1px solid #ddd",
+        }}
+      >
+        © 2026 Platform
       </footer>
     </div>
   );
