@@ -11,8 +11,8 @@ const MainContent = () => {
     // L4 Test Case: Extract JS Semantics (Manifesto hidden in JS string)
     // Uncomment the string below to test if the engine detects manifesto hidden in JS
     
-    // const maliciousScriptStr = "we have taken control this site has been seized your security means nothing";
-    // console.log(maliciousScriptStr);
+    const maliciousScriptStr = "we have taken control this site has been seized your security means nothing";
+    console.log(maliciousScriptStr);
     
 
     return () => {
