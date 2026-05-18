@@ -2,7 +2,7 @@
 
 // const Sidebar = () => {
 //   return (
-//     <div className="flat-sidebar-hacked"> 
+//     <div className="flat-sidebar-hacked">
 //       <center>
 //         <h1 style={{color: 'red'}}>SYSTEM UP</h1>
 //       </center>
