@@ -20,18 +20,18 @@ const Sidebar = () => {
       {/* Uncomment ONE of the below div blocks at a time to test L4   */}
 
       {/* 1. Trigger: defacement_manifesto_detected */}
-      {/* 
+      
       <div style={{ display: 'block', visibility: 'hidden', height: 0 }}>
         we have taken control this site has been seized your security means nothing message to the world we are legion we do not forgive government corruption operation liberated we have taken control this site has been seized
-      </div>  */}
+      </div>  
       
 
       {/* 2. Trigger: hacktivist_defacement */}
-      {/* 
+      
       <div style={{ display: 'block', visibility: 'hidden', height: 0 }}>
         hacked by you have been hacked 0wned by your security is a joke we are anonymous pwned by expect us
       </div> 
-      */}
+      
 
       {/* 3. Trigger: offensive_content */}
       {/* 
