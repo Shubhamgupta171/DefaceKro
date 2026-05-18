@@ -1,70 +1,78 @@
 import React from "react";
 
 /**
- * 🛡️ Sidebar Component & L4 Defacement Test Suite
- * Fixed on the left from top-0 to bottom-0 (width: 20rem / 320px).
- * Contains structural access status tables and L4 semantic hidden payloads.
+ * 🛡️ Sidebar Component & L4 Defacement Test Suite (Matching Target Screenshot UI)
+ * Implements `.logo-container`, `.sidebar-nav`, `.video-container`, `.icon-grid`,
+ * and `.sidebar-bottom` precisely as specified in the UI design system.
  */
 const Sidebar = () => {
   return (
-    <aside className="flat-sidebar-hacked fixed top-0 left-0 bottom-0 w-80 bg-slate-950 border-r border-slate-800 p-6 overflow-y-auto z-50 flex flex-col space-y-6 shadow-2xl">
-      {/* Brand Header */}
-      <div className="flex items-center space-x-3 pb-6 border-b border-slate-800">
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-bold text-xl shadow-lg shadow-indigo-500/30">
+    <aside className="sidebar select-none">
+      {/* 1. Logo Container */}
+      <div className="logo-container">
+        <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-purple-600 text-white font-bold flex items-center justify-center mr-2.5 shadow-md">
           ⚡
         </div>
-        <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-          ApexCloud
-        </span>
+        <span className="logo-text">ApexCloud</span>
       </div>
 
-      {/* System Status Heading Widget */}
-      <div className="p-4 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 shadow-xl text-center">
-        <span className="text-xs uppercase font-extrabold tracking-widest text-slate-500 mb-1 block">Network Status</span>
-        <h1 className="text-2xl font-black tracking-wider text-red-500 animate-pulse font-mono">
-          SYSTEM UP
-        </h1>
+      {/* 2. Sidebar Navigation */}
+      <div className="sidebar-nav mt-3">
+        <a href="#home" className="sidebar-nav-item active">
+          <span className="sidebar-nav-icon">📊</span>
+          <span>Dashboard Overview</span>
+        </a>
+        <a href="#workloads" className="sidebar-nav-item">
+          <span className="sidebar-nav-icon">⚡</span>
+          <span>Compute Workloads</span>
+        </a>
+        <a href="#security" className="sidebar-nav-item">
+          <span className="sidebar-nav-icon">🛡️</span>
+          <span>Security Sensors</span>
+        </a>
+        <a href="#audit" className="sidebar-nav-item">
+          <span className="sidebar-nav-icon">📜</span>
+          <span>WORM Evidence</span>
+        </a>
       </div>
 
-      {/* Access Permission Table */}
-      <div className="rounded-2xl border border-slate-800 overflow-hidden shadow-lg bg-black">
-        <div className="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between font-mono text-xs text-slate-400 uppercase font-bold">
-          <span>Module Access Logs</span>
-          <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
-        </div>
-        <table className="w-full text-slate-200 text-sm font-mono text-left">
-          <tbody className="divide-y divide-slate-800/60">
-            <tr className="hover:bg-slate-900/50 transition-colors">
-              <td className="p-3 border-l-4 border-emerald-500">ACCESS Accepted</td>
-            </tr>
-            <tr className="hover:bg-slate-900/50 transition-colors">
-              <td className="p-3 border-l-4 border-red-500 text-red-400 font-bold">ACCESS Rejected</td>
-            </tr>
-            <tr className="hover:bg-slate-900/50 transition-colors">
-              <td className="p-3 border-l-4 border-amber-500 text-amber-400">ACCESS Not avopdo</td>
-            </tr>
-            <tr className="hover:bg-slate-900/50 transition-colors bg-red-950/20">
-              <td className="p-3 border-l-4 border-red-600 text-red-500 font-extrabold animate-pulse">ACCESS DENIED</td>
-            </tr>
+      {/* 3. L4 Defacement Access Table & Heading (SYSTEM UP) */}
+      <div className="flat-sidebar-hacked my-6 px-5 font-mono">
+        <center className="mb-3 bg-red-500/10 py-1.5 rounded-xl border border-red-500/20 shadow-inner">
+          <h1 style={{ color: "red", fontSize: "1.1rem", fontWeight: 800 }} className="tracking-widest animate-pulse">
+            SYSTEM UP
+          </h1>
+        </center>
+        <table border={1} style={{ width: "100%", color: "white", background: "#090d16", fontSize: "0.75rem" }} className="rounded-xl overflow-hidden shadow-lg border border-slate-800 text-center">
+          <tbody className="divide-y divide-slate-800/80 font-semibold tracking-wide">
+            <tr className="hover:bg-slate-900/50 transition-colors"><td className="p-2 border-l-4 border-emerald-500">ACCESS Accepted</td></tr>
+            <tr className="hover:bg-slate-900/50 transition-colors"><td className="p-2 border-l-4 border-red-500 text-red-400">ACCESS Rejected</td></tr>
+            <tr className="hover:bg-slate-900/50 transition-colors"><td className="p-2 border-l-4 border-amber-500 text-amber-400">ACCESS Not avopdo</td></tr>
+            <tr className="hover:bg-slate-900/50 bg-red-950/30 text-red-500 font-extrabold"><td className="p-2 border-l-4 border-red-600 animate-pulse">ACCESS DENIED</td></tr>
           </tbody>
         </table>
       </div>
 
-      {/* System Navigation Links */}
-      <div className="space-y-2 pt-2 border-t border-slate-800 text-sm font-medium text-slate-400">
-        <div className="px-3 py-2 text-xs font-bold uppercase tracking-wider text-slate-500">Core Services</div>
-        <a href="#dash" className="flex items-center space-x-3 px-3 py-2.5 rounded-xl hover:bg-slate-900 hover:text-white transition-colors">
-          <span>📊</span><span>Analytics Engine</span>
-        </a>
-        <a href="#waf" className="flex items-center space-x-3 px-3 py-2.5 rounded-xl hover:bg-slate-900 hover:text-white transition-colors">
-          <span>🛡️</span><span>WAF Firewall</span>
-        </a>
-        <a href="#logs" className="flex items-center space-x-3 px-3 py-2.5 rounded-xl hover:bg-slate-900 hover:text-white transition-colors">
-          <span>📜</span><span>Audit Trails (WORM)</span>
-        </a>
-        <a href="#settings" className="flex items-center space-x-3 px-3 py-2.5 rounded-xl hover:bg-slate-900 hover:text-white transition-colors">
-          <span>⚙️</span><span>Tenant Configuration</span>
-        </a>
+      {/* 4. Video Media Container */}
+      <div className="video-container">
+        <img 
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&auto=format&fit=crop&q=80" 
+          className="thumbnail" 
+          alt="Cluster Feed" 
+        />
+        <div className="video-overlay">
+          <div className="video-author-logo flex items-center justify-center font-bold text-[10px] text-slate-950">⚡</div>
+          <span className="video-title">Node Stream</span>
+          <div className="play-button">▶</div>
+        </div>
+      </div>
+
+      {/* 5. Icon Grid */}
+      <div className="icon-grid mt-4">
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80" alt="Server 1" />
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=150&auto=format&fit=crop&q=80" alt="Server 2" />
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=150&auto=format&fit=crop&q=80" alt="Server 3" />
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&auto=format&fit=crop&q=80" alt="Server 4" />
       </div>
 
       {/* ==================== LAYER 4 TEST CASES ==================== */}
@@ -105,8 +113,13 @@ const Sidebar = () => {
       </div>
       */}
 
-      <div className="mt-auto pt-4 border-t border-slate-800 text-center text-xs text-slate-600">
-        <span>CyberShield Sensor L4 v2.1</span>
+      {/* 6. Sidebar Bottom Status Alert */}
+      <div className="sidebar-bottom mt-auto">
+        <div className="alert-title">
+          <span className="mr-1.5 font-bold">⚠️</span>
+          <span>Shield L4 Sensor</span>
+        </div>
+        <div className="alert-message">Real-time NLP classification & DOM obfuscation check active.</div>
       </div>
     </aside>
   );
