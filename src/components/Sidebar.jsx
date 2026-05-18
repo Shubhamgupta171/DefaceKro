@@ -41,18 +41,18 @@ const Sidebar = () => {
        */}
 
       {/* 4. Trigger: seo_spam_match (Tier 3) */}
-      {/* 
+    
       <div style={{ display: 'block', visibility: 'hidden', height: 0 }}>
         buy cialis cheap viagra pills online without prescription online casino betting bonus crypto trading double your bitcoin
       </div> 
-       */}
+      
 
       {/* 5. Trigger: Bot Score (Impacts classifier but no hard trigger by itself) */}
-      {/* 
+      
       <div style={{ display: 'block', visibility: 'hidden', height: 0 }}>
         under construction coming soon check back later site is temporarily unavailable
       </div> 
-      */}
+    
 
     </div>
   );
