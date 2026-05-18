@@ -12,9 +12,10 @@ import React, { useEffect } from "react";
  * 2. Render or capture this page via the Playwright renderer.
  * 3. Verify that the scanner fires the exact expected trigger ID.
  */
-const MainContent: React.FC = () => {
-
-  // DYNAMIC DOM HEAD MANIPULATION (L1 & L4 META / SCRIPT TEST CASES)
+const MainContent = () => {
+  // =========================================================================
+  // 🔬 DYNAMIC DOM HEAD MANIPULATION (L1 & L4 META / SCRIPT TEST CASES)
+  // =========================================================================
   useEffect(() => {
     /* ------------------------------------------------------------------------
      * [UNCOMMENT TO TEST L1-TRG-05] Canonical Link SEO Poisoning
@@ -85,9 +86,9 @@ const MainContent: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
-      {/* 
-        *  LEGITIMATE BASELINE HEADER (STATIC ZONE)
-        * */}
+      {/* =====================================================================
+        * 🟢 LEGITIMATE BASELINE HEADER (STATIC ZONE)
+        * ===================================================================== */}
       <nav id="header" className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center space-x-3">
@@ -117,9 +118,9 @@ const MainContent: React.FC = () => {
         </div>
       </nav>
 
-      {/* 
-        *  LAYER 1 & LAYER 4 DEFACEMENT TEST SUITE (DOM BODY MOCKS)
-        * */}
+      {/* =====================================================================
+        * 🚨 LAYER 1 & LAYER 4 DEFACEMENT TEST SUITE (DOM BODY MOCKS)
+        * ===================================================================== */}
 
       {/* ---------------------------------------------------------------------
         * [UNCOMMENT TO TEST L1-TRG-01] Payment Form Hijacking (Cross-Apex)
@@ -251,9 +252,9 @@ const MainContent: React.FC = () => {
       */}
 
 
-      {/* 
-        *  LEGITIMATE BASELINE HERO & CONTENT (DYNAMIC ZONE)
-        *  */}
+      {/* =====================================================================
+        * 🟢 LEGITIMATE BASELINE HERO & CONTENT (DYNAMIC ZONE)
+        * ===================================================================== */}
       <main id="main-content" className="relative pb-24 overflow-hidden">
         {/* Decorative Gradients */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-tr from-indigo-600/20 via-purple-600/20 to-pink-600/10 rounded-full blur-[120px] pointer-events-none -z-10" />
@@ -396,9 +397,9 @@ const MainContent: React.FC = () => {
         </div>
       </main>
 
-      {/*
-        *  LEGITIMATE FOOTER (STATIC ZONE)
-        * */}
+      {/* =====================================================================
+        * 🟢 LEGITIMATE FOOTER (STATIC ZONE)
+        * ===================================================================== */}
       <footer id="footer" className="border-t border-slate-800/80 bg-slate-950 py-16 text-slate-400 text-sm">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2 space-y-4">
